@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>E-commerce Landing Page</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section id="hero">
+    <h1>Welcome to [Your E-commerce Website]</h1>
+    <p>Discover a World of Possibilities</p>
+    <a href="#" class="cta-button">Shop Now</a>
+  </section>
+  
+  <section id="featured-products">
+    <h2>Featured Products</h2>
+    <div class="product">
+      <img src="product1.jpg" alt="Product 1">
+      <h3>Product 1</h3>
+      <p>Description of Product 1</p>
+    </div>
+    <div class="product">
+      <img src="product2.jpg" alt="Product 2">
+      <h3>Product 2</h3>
+      <p>Description of Product 2</p>
+    </div>
+    <div class="product">
+      <img src="product3.jpg" alt="Product 3">
+      <h3>Product 3</h3>
+      <p>Description of Product 3</p>
+    </div>
+  </section>
+  
+  <section id="why-choose-us">
+    <h2>Why Choose Us</h2>
+    <div class="benefit">
+      <img src="benefit1.png" alt="Benefit 1">
+      <h3>Benefit 1</h3>
+      <p>Description of Benefit 1</p>
+    </div>
+    <div class="benefit">
+      <img src="benefit2.png" alt="Benefit 2">
+      <h3>Benefit 2</h3>
+      <p>Description of Benefit 2</p>
+    </div>
+    <div class="benefit">
+      <img src="benefit3.png" alt="Benefit 3">
+      <h3>Benefit 3</h3>
+      <p>Description of Benefit 3</p>
+    </div>
+  </section>
+  
+  <section id="customer-testimonials">
+    <h2>Customer Testimonials</h2>
+    <div class="testimonial">
+      <p>Testimonial 1</p>
+      <p>- Customer Name 1</p>
+    </div>
+    <div class="testimonial">
+      <p>Testimonial 2</p>
+      <p>- Customer Name 2</p>
+    </div>
+    <div class="testimonial">
+      <p>Testimonial 3</p>
+      <p>- Customer Name 3</p>
+    </div>
+  </section>
+  
+  <section id="newsletter">
+    <h2>Subscribe to Our Newsletter</h2>
+    <form>
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+  
+  <footer>
+    <ul>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Terms and Conditions</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+    </ul>
+    <p>&copy; 2023 [Your E-commerce Website]. All rights reserved.</p>
+  </footer>
+  
+</body>
+</html>
+
+CSS :
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+}
+
+header h1 {
+  text-align: center;
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  color: #ff4500;
+}
+
+/* Main Section Styles */
+.section {
+  padding: 50px 0;
+}
+
+.section h2 {
+  text-align: center;
+}
+
+.section p {
+  text-align: center;
+}
+
+/* Button Styles */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff6347;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ff4500;
+}
+
+/* Shop Section Styles */
+.shop-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Styles */
+#featured-products {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #e6e6e6;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.product h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.product p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Why Choose Us Styles */
+#why-choose-us {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #f3f3f3;
+}
+
+.benefit-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.benefit {
+  width: 250px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.benefit img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.benefit h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.benefit p {
+  font-size: 16px;
+  color: #666;
+}
+#customer-testimonials {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.testimonial {
+  width: 30%;
+  display: inline-block;
+  margin: 0 1.5%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#newsletter {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #f8f8f8;
+}
+
+#newsletter input[type="email"] {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+#newsletter button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer ul {
+  padding: 0;
+  list-style: none;
+}
+
+footer ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #fff;
+}
