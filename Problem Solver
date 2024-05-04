@@ -1,0 +1,103 @@
+HTML :
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Complex Problem-Solving Website</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Complex Problem-Solving Website</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Problem-Solving Form</h2>
+            <form id="problem-solving-form">
+                <label for="input">Input:</label>
+                <textarea id="input" name="input" required></textarea>
+                <button type="submit">Solve</button>
+            </form>
+
+            <div id="output-container">
+                <h3>Output:</h3>
+                <pre id="output"></pre>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+CSS :
+body {
+    font-family: Arial, sans-serif;
+}
+
+header, main, section {
+    margin: 20px;
+}
+
+textarea {
+    width: 500px;
+    height: 200px;
+}
+
+button {
+    padding: 10px 20px;
+}
+
+#output-container {
+    margin-top: 20px;
+}
+
+#output {
+    white-space: pre-wrap;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+Java(ProblemSolver.java) :
+public class ProblemSolver {
+    public static String solveProblem(String input) {
+        // Implement your complex problem-solving logic using Java
+        // Example: perform computations, algorithms, data manipulation, etc.
+        String output = "Output: " + input.toUpperCase(); // Placeholder example
+        return output;
+    }
+
+Python(solver.py) :
+def solve_problem(input):
+    # Implement your complex problem-solving logic using Python
+    # Example: perform computations, algorithms, data manipulation, etc.
+    output = "Output: " + input.lower()  # Placeholder example
+    return output
+
+JS(script.js) :
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("problem-solving-form");
+    const outputElement = document.getElementById("output");
+
+    form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const input = document.getElementById("input").value;
+
+        // Make an AJAX request to the server-side code (Java or Python) for problem-solving
+        // Adjust the endpoint and payload structure based on your server setup
+        // Example using Python as the server-side code:
+        fetch("/solve_problem", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ input: input }),
+        })
+            .then(response => response.json())
+            .then(data => {
+                outputElement.textContent = data.output;
+            })
+            .catch(error => {
+                console.error("Error:", error);
+            });
+    });
+});
