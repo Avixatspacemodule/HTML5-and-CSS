@@ -1,0 +1,103 @@
+HTML :
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radiant Sun Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome our website</h1>
+    </header>
+    <main>
+        <section class="section colorful-section">
+            <h2>About Us</h2>
+            <p>//Your paragraph//.</p>
+        </section>
+        <section class="section">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Graphic Design</li>
+                <li>Web Development</li>
+                <li>Animation</li>
+                <li>Brand Identity</li>
+            </ul>
+        </section>
+        <section class="section colorful-section">
+            <h2>Portfolio</h2>
+            <div class="portfolio">
+                <div class="portfolio-item" style="background-color: #FF6347;"></div>
+                <div class="portfolio-item" style="background-color: #00FFFF;"></div>
+                <div class="portfolio-item" style="background-color: #FFD700;"></div>
+                <div class="portfolio-item" style="background-color: #8A2BE2;"></div>
+            </div>
+        </section>
+        <section class="section">
+            <h2>Contact Us</h2>
+            <p>//Paragraph 2//.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Radiant Sun Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+CSS :
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header, main, footer {
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #FFA500; /* Orange */
+    color: white;
+    text-align: center;
+}
+
+/* Main Section Styles */
+.section {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.colorful-section {
+    background-color: #FFD700; /* Gold */
+}
+
+/* Portfolio Styles */
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.portfolio-item {
+    width: calc(25% - 20px);
+    height: 100px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #FFA500; /* Orange */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
