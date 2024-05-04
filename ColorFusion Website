@@ -1,0 +1,162 @@
+HTML :
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Montserrat', sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-image: linear-gradient(to bottom right, #ff7f50, #ff1493);
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 2rem 0;
+        text-align: center;
+      }
+
+      nav {
+        background-color: #444;
+        padding: 1rem 0;
+        text-align: center;
+      }
+
+      ul {
+        list-style: none;
+        display: inline-block;
+        padding: 0;
+      }
+
+      li {
+        display: inline-block;
+        margin: 0 1rem;
+      }
+
+      a {
+        color: #fff;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      a:hover {
+        background-color: #555;
+      }
+
+      .hero {
+        text-align: center;
+        padding: 5rem 0;
+      }
+
+      h1 {
+        font-size: 4rem;
+        color: #fff;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1.5rem;
+        color: #fff;
+        margin-bottom: 2rem;
+      }
+
+      .cta-button {
+        display: inline-block;
+        background-color: #fff;
+        color: #ff7f50;
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      .cta-button:hover {
+        background-color: #ff7f50;
+        color: #fff;
+      }
+
+      .feature-section {
+        text-align: center;
+        padding: 5rem 0;
+        background-color: #f0f0f0;
+      }
+
+      .feature-icon {
+        font-size: 3rem;
+        color: #ff7f50;
+        margin-bottom: 1rem;
+      }
+
+      .feature-title {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        color: #333;
+      }
+
+      .feature-description {
+        font-size: 1.2rem;
+        color: #666;
+      }
+
+      .footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 2rem 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Our Website</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <h1>Explore Our Amazing Website</h1>
+      <p>We provide cool designs, vibrant backgrounds, and rich fonts to create an attractive layout.</p>
+      <a href="#" class="cta-button">Get Started</a>
+    </div>
+
+    <div class="feature-section">
+      <div class="feature-icon">✨</div>
+      <div class="feature-title">Attractive Layout</div>
+      <div class="feature-description">Our website comes with stunning and appealing designs that will capture your attention.</div>
+    </div>
+
+    <div class="feature-section">
+      <div class="feature-icon">🎨</div>
+      <div class="feature-title">Cool Designs</div>
+      <div class="feature-description">Experience creative and innovative designs that make our website unique and cool.</div>
+    </div>
+
+    <div class="feature-section">
+      <div class="feature-icon">🚀</div>
+      <div class="feature-title">Vibrant Backgrounds</div>
+      <div class="feature-description">Our vibrant backgrounds add life and excitement to every page on the website.</div>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; 2023 Our Website. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
