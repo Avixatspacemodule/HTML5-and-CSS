@@ -1,0 +1,131 @@
+HTML -
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuristic Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Welcome to the Future</h1>
+        <p>Experience a new era of innovation and technology</p>
+    </header>
+    <section class="main-section">
+        <h2>About Us</h2>
+        <p>We are a team of visionaries dedicated to pushing the boundaries of technology and creating a better tomorrow. Our mission is to revolutionize industries and empower individuals through cutting-edge solutions.</p>
+        <a href="#" class="btn">Learn More</a>
+    </section>
+    <section class="features">
+        <h2>Features</h2>
+        <div class="feature-card">
+            <i class="fas fa-vr-cardboard"></i>
+            <h3>Virtual Reality</h3>
+            <p>Experience immersive virtual worlds</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-robot"></i>
+            <h3>Robotics</h3>
+            <p>Automate tasks and streamline processes</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-lightbulb"></i>
+            <h3>Artificial Intelligence</h3>
+            <p>Enhance productivity with AI-driven solutions</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2023 FutureTech Inc. All rights reserved.</p>
+    </footer>
+</div>
+
+</body>
+</html>
+
+CSS -
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+.main-section {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.feature-card {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    margin: 0 10px; /* Added margin */
+}
+
+.feature-card i {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    font-size: 1.1em;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #ff6f00;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff8f00;
+}
+
