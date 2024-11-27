@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Light/Dark Mode Toggle</title>
+  <style>
+    :root {
+      --bg-color-light: #f4f4f4; /* Updated to match the uploaded image */
+      --text-color-light: #000000;
+      --bg-color-dark: #121212;
+      --text-color-dark: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: var(--bg-color-light);
+      color: var(--text-color-light);
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    body.dark-mode {
+      background-color: var(--bg-color-dark);
+      color: var(--text-color-dark);
+    }
+
+    .toggle-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .toggle-switch {
+      position: relative;
+      width: 50px;
+      height: 25px;
+      background: #e0e0e0;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      overflow: hidden;
+    }
+
+    .toggle-knob {
+      position: absolute;
+      top: 2.5px;
+      left: 2.5px;
+      width: 20px;
+      height: 20px;
+      background: #ffffff;
+      border-radius: 50%;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, background 0.3s ease;
+      z-index: 1;
+    }
+
+    .toggle-switch.active .toggle-knob {
+      transform: translateX(25px);
+      background: #4c4c4c;
+    }
+
+    .toggle-icon {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 5px;
+      transform: translateY(-50%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .toggle-icon span {
+      font-size: 12px;
+      color: #ffffff;
+      transition: opacity 0.3s ease;
+    }
+
+    .toggle-icon .sun {
+      opacity: 1;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .toggle-icon .moon {
+      opacity: 0;
+      transform: translateX(-10px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .toggle-switch.active .toggle-icon .sun {
+      opacity: 0;
+      transform: translateX(10px);
+    }
+
+    .toggle-switch.active .toggle-icon .moon {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  </style>
+</head>
+<body>
+  <div class="toggle-container">
+    <div class="toggle-switch" id="themeToggle">
+      <div class="toggle-knob"></div>
+      <div class="toggle-icon">
+        <span class="sun">☀️</span>
+        <span class="moon">🌙</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const themeToggle = document.getElementById('themeToggle');
+    const body = document.body;
+
+    themeToggle.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+      themeToggle.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
